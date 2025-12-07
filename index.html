@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Arno Caroopen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-header">
+                <div class="nav-logos">
+                    <img src="fichiers/Capture d’écran_6-12-2025_02247_www.bing.com.jpeg" alt="Logo GEII">
+                    <img src="fichiers/IUT Velizy Villacoublay logo 2020 Blanc.png" alt="Logo UVSQ">
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">Coordonnées</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#cv">Mon CV</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <p>Bonjour, je suis</p>
+                <h1>Arno <span class="highlight">Caroopen</span></h1>
+                <h3>Etudiant en 2ème année de BUT GEII, ce portfolio permet d'avoir une brève présentation de mon profil et de mon parcours </h3>
+            </div>
+            <div class="hero-image">
+                <img src="fichiers/téléchargement.png" alt="Photo de profil d'Arno Caroopen">
+            </div>
+        </section>
+
+       <section id="a-propos" class="about">
+    <h2>Coordonnées</h2>
+    <div class="about-container">
+        <div class="personal-details">
+           <p><strong>Email :</strong> <a href="mailto:arnocaroopeen@gmail.com?subject=Contact%20depuis%20Portfolio%20Arno%20Caroopen">arnocaroopeen@gmail.com</a></p>
+           <p><strong>Portable :</strong> (+33) 0767427881</p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/arno-caroopen-7188a2346/">Arno Caroopen</a></p>
+            <p><strong>Adresse :</strong> 10 Rue Paul Dautier, Vélizy, France</p>
+        </div>
+    </div>
+</section>
+
+        <section id="competences" class="skills">
+            <h2>Mes <span class="highlight">Compétences</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Conception de systèmes électronique </h3>
+                </div>
+                <div class="skill-card">
+                   
+                    <h3> Vérification du fonctionnement de montages électroniques</h3>
+                </div>
+                <div class="skill-card">
+                    
+                    <h3>Maintenance d'installations électriques industrielles </h3>
+                </div>
+                <div class="skill-card">
+                    
+                    <h3>implantation de fonctions analogiques / numériques dans des systèmes</h3>
+                </div>
+                
+               
+            </div>
+        </section>
+        
+        <section id="projets" class="projects">
+            <h2>Mes <span class="highlight">Projets</span></h2>
+
+            <div class="projects-container">
+                
+                <div class="project-item project-left" data-category="geii">
+                    <div class="project-image">
+                        <img src="fichiers/thermo screen.PNG" alt="Aperçu du Thermomètre">
+                    </div>
+                    <div class="project-details">
+                        <p>Conception d'un thermomètre d'intérieur avec un affichage 7 segments </p>
+                        <button class="btn btn-small btn-detail" data-modal-target="modal-thermo">Détails</button>
+                    </div>
+                </div>
+
+                <div class="project-item project-right" data-category="geii">
+                    <div class="project-details">
+                       <p>Conception d'un capteur de recul par acquisition de données </p>
+                        <button class="btn btn-small btn-detail" data-modal-target="modal-onde">Détails</button>
+                    </div>
+                    <div class="project-image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cv" class="cv-section">
+            <h2>Mon <span class="highlight">CV</span></h2>
+            <div class="cv-container">
+                <img src="fichiers/CV ARNO PNG.png" alt="Aperçu du CV de Arno" class="cv-image">
+                <br>
+                <a href="fichiers/CV ARNO (7).pdf" class="btn" download>Télécharger le PDF</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Arno Caroopen - 2025</p>
+        </footer>
+
+
+    <div id="modal-thermo" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Conception d'un Thermomètre d'intérieur (SAÉ 1.02)</h3>
+            <p><strong>Ce projet a pour de réaliser un montage permettant de mesurer une température et de l'afficher sur deux écrans 7 segments ; le projet se déroule dans une première partie par l'utilisation d'un capteur de température (LM335) qui permettra d'avoir la correspondance température - tension ; par la suite , la tension en sortie du capteur de température est amplifiée afin de pouvoir être au dessus du seuil minimal de tension du convertisseur analogique numérique , qui servira à afficher la température mesurée par le biais d'une mémoire qui permet d'enregistrer la correspondance température - tension ; ce qui évite d'avoir des valeurs incohérentes</p>
+            <img src="fichiers/schema fonction kicad thermo.PNG" alt="Schéma fonctionnel du Thermomètre">
+        </div>
+    </div>
+
+    <div id="modal-onde" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Système de Positionnement 2D par Capteurs (SAÉ-S3)</h3>
+            <p><strong> Ce projet a pour but de concevoir un système de radar de recul grâce a l'utilisation de deux transductors ultrasonore SRF04;
+                le fonctionnement du composant est étudié dans une première partie grâce à la création de deux cartes ( partie émmeteur et récepteur ). dans une seconde partie , une liaison série est mis en place entre la partie récepteur et une carte Sleepybee , ce qui permet l'acquisition des données sur un ordinateur ; et dans une dernière partie ; une liaison série entre la carte Sleepybee et une autre carte (Raspberry Pi) est faite afin de pouvoir afficher les valeurs sur l'écran lié a la Raspberry
+            </p>
+        it.
+           
+        </div>
+    </div>
+
+
+    <script>
+        // FONCTIONNALITÉ DES MODALES : Ouverture et fermeture des pop-ups de détails
+        document.querySelectorAll('.btn-detail').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const modalId = e.target.getAttribute('data-modal-target');
+                document.getElementById(modalId).style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.close-btn').forEach(span => {
+            span.addEventListener('click', () => {
+                span.closest('.modal-overlay').style.display = 'none';
+            });
+        });
+
+        // Fermer la modale si l'utilisateur clique en dehors de la fenêtre
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
